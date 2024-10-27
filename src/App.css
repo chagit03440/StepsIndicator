@@ -27,11 +27,45 @@
 .App-link {
   color: #61dafb;
 }
-
+.steps{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+  background-color: rgb(205, 201, 201);
+}
+.circle.active {
+  background-color: rgb(143, 174, 237);
+}
+.stepButtons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+.QAHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
